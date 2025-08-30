@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -230,4 +232,30 @@ a{
     100%{
         transform: translateY(0%);
   }
+}
+.about-info{
+background-color: #1f242d;
+    display: column flex;
+    align-items: center;
+    gap: 70px;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-contact 1.5s linear forwards;
+    animation-delay: 1.6s;
+
+}
+.about-info h2{
+    display:inline;
+    font-size: 32px;
+    margin: 10px;
+
+}
+.about-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+    align-items: center;
+
 }
